@@ -45,12 +45,3 @@ class Click_page:
         time.sleep(2)
         self.lopage.get_page_resource_input_login_element().click()
 
-
-if __name__ == '__main__':
-    clpag = Click_page()
-    clpag.click_resource_file()
-    clpag.click_resource_iphone()
-    clpag.click_resource_consent()
-    clpag.click_resource_login()
-    clpag.input_user_password('137773987731','wqeqwea123456')
-    clpag.click_resource_input_login()
