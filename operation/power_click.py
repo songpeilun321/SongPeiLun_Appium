@@ -7,7 +7,7 @@
 # @Software: PyCharm
 #对元素进行操作
 import time
-from page.permission_page import LoginPage
+from page.power_page import LoginPage
 
 
 class Click_page:
