@@ -7,7 +7,6 @@
 # @Software: PyCharm
 from appium import webdriver
 import os
-import time
 
 class Driver:
     def __init__(self):

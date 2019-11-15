@@ -12,9 +12,9 @@ class Element:
     def __init__(self,driver):
         self.driver = driver
 
-    def get_element(self,key):
+    def get_element(self,key,value=None):
         read_element = Read_Element()
-        local = read_element.get_value(key)
+        local = read_element.get_value(key,value)
 
         if local !=None:
             by = local.split('>')[0]    #>前面的元素

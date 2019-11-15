@@ -11,16 +11,16 @@ class Element:
     # def __init__(self,driver):
     #     self.driver = driver
 
-    def get_element(self,key):
+    def get_element(self,key,value=None):
         read_element = Read_Element()
-        local = read_element.get_value(key)
-        print(local)
+        local = read_element.get_value(key,value)
+        # print(local)
 
         by = local.split('>')[0]    #>前面的元素
         local_by = local.split('>')[1]     #>后面的元素
         print(by)
         print(local_by)
-        #
+
         # if local !=None:
         #     by = local.split('>')[0]    #>前面的元素
         #     local_by = local.split('>')[1]     #>后面的元素
@@ -35,4 +35,4 @@ class Element:
 
 if __name__ == '__main__':
     element = Element()
-    element.get_element('resource_file')
+    element.get_element('resource_input_login','login_element')

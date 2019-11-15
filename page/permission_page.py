@@ -31,3 +31,16 @@ class LoginPage:
     #获取密码登录元素信息
     def get_page_resource_login_element(self):
         return self.element.get_element('resource_login')
+
+    #获取输入账号元素信息
+    def get_page_resource_input_phone_element(self):
+        return self.element.get_element('resource_input_phone','login_element')
+
+    #获取输入密码元素信息
+    def get_page_resource_input_password_element(self):
+        return self.element.get_element('resource_input_password','login_element')
+
+    #获取登录信息
+    def get_page_resource_input_login_element(self):
+        return self.element.get_element('resource_input_login', 'login_element')
+

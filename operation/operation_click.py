@@ -7,8 +7,7 @@
 # @Software: PyCharm
 #对元素进行操作
 import time
-
-from page.login_page import LoginPage
+from page.permission_page import LoginPage
 
 
 class Click_page:
@@ -35,7 +34,23 @@ class Click_page:
         time.sleep(2)
         self.lopage.get_page_resource_login_element().click()
 
+    #操作点击登录密码
+    def input_user_password(self,user,password):
+        time.sleep(2)
+        print(self.lopage.get_page_resource_input_phone_element().send_keys(user))
+        print(self.lopage.get_page_resource_input_password_element().send_keys(password))
+
+    #操作登录
+    def click_resource_input_login(self):
+        time.sleep(2)
+        self.lopage.get_page_resource_input_login_element().click()
+
 
 if __name__ == '__main__':
     clpag = Click_page()
     clpag.click_resource_file()
+    clpag.click_resource_iphone()
+    clpag.click_resource_consent()
+    clpag.click_resource_login()
+    clpag.input_user_password('137773987731','wqeqwea123456')
+    clpag.click_resource_input_login()
